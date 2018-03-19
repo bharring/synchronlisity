@@ -1,0 +1,8 @@
+{
+  "name": "synchronlisity",
+  "app_id": "b56d4633",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
