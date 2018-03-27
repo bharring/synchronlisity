@@ -12,6 +12,8 @@ import { AngularFireDatabaseModule } from "angularfire2/database";
 import { Pro } from "@ionic/pro";
 
 import firebaseConfig from "../../firebase.config";
+import { MenuProvider, ListProvider } from "../providers/list-index/list-index";
+import ListUtils from '../shared/list-utils';
 
 Pro.init("b56d4633", {
   appVersion: "0.0.1"
@@ -53,7 +55,10 @@ export class MyErrorHandler implements ErrorHandler {
     SplashScreen,
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     IonicErrorHandler,
-    { provide: ErrorHandler, useClass: MyErrorHandler }
+    { provide: ErrorHandler, useClass: MyErrorHandler },
+    MenuProvider,
+    ListProvider,
+    ListUtils,
   ]
 })
 export class AppModule {}
