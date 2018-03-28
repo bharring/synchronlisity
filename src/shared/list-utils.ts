@@ -1,8 +1,5 @@
 import { Injectable } from "@angular/core";
-import {
-  AlertController,
-  ActionSheetController
-} from "ionic-angular";
+import { AlertController, ActionSheetController } from "ionic-angular";
 import { ListItem } from "../models/list-item";
 import { ListIndexProvider } from "../providers/list-index/list-index";
 

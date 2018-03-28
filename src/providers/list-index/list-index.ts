@@ -55,6 +55,10 @@ export class MenuProvider extends ListIndexProvider {
 export class ListProvider extends ListIndexProvider {
   private subject = new Subject<any>();
 
+  constructor(public afDatabase: AngularFireDatabase) {
+    super(afDatabase);
+  }
+
   setList(name: string) {
     this.index = this.afDatabase.list(name);
     this.subject.next({ name: name, items: this.index.valueChanges() });
@@ -62,12 +66,5 @@ export class ListProvider extends ListIndexProvider {
 
   getList(): Observable<any> {
     return this.subject.asObservable();
-  }
-
-  constructor(
-    public afDatabase: AngularFireDatabase,
-    menuProvider: MenuProvider
-  ) {
-    super(afDatabase);
   }
 }

@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { AngularFireDatabase  } from "angularfire2/database";
+import { AngularFireDatabase } from "angularfire2/database";
 import { Observable } from "rxjs/Observable";
 import { Subscription } from "rxjs/Subscription";
 import { ListProvider } from "../../providers/list-index/list-index";
