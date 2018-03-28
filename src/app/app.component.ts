@@ -7,7 +7,7 @@ import { HomePage } from "../pages/home/home";
 import { MenuProvider, ListProvider } from "../providers/list-index/list-index";
 import { Observable } from "rxjs/Observable";
 import { ListItem } from "../models/list-item";
-import ListUtils from "../shared/list-utils";
+import { ListUtils } from "../shared/list-utils";
 @Component({
   templateUrl: "app.html"
 })

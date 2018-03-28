@@ -4,7 +4,7 @@ import { ListItem } from "../models/list-item";
 import { ListIndexProvider } from "../providers/list-index/list-index";
 
 @Injectable()
-export default class ListUtils {
+export class ListUtils {
   constructor(
     public alertCtrl: AlertController,
     public actionSheetCtrl: ActionSheetController

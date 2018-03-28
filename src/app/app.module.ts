@@ -13,7 +13,7 @@ import { Pro } from "@ionic/pro";
 
 import firebaseConfig from "../../firebase.config";
 import { MenuProvider, ListProvider } from "../providers/list-index/list-index";
-import ListUtils from '../shared/list-utils';
+import { ListUtils } from '../shared/list-utils';
 
 Pro.init("b56d4633", {
   appVersion: "0.0.1"

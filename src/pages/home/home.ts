@@ -4,7 +4,7 @@ import { Observable } from "rxjs/Observable";
 import { Subscription } from "rxjs/Subscription";
 import { ListProvider } from "../../providers/list-index/list-index";
 import { ListItem } from "../../models/list-item";
-import ListUtils from "../../shared/list-utils";
+import { ListUtils } from "../../shared/list-utils";
 
 @Component({
   selector: "page-home",
